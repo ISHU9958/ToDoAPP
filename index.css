@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+#mainHeading {
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+}
+
+.todoContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+    position: relative;
+}
+
+#inputBox,
+#dateInputBox {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.todoInput {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.jsInput {
+    display: grid;
+    /* gap: 10px; */
+    width: 100%;
+    max-width: 500px;
+}
+
+.jsitem,
+.jsdate {
+    font-size: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    /* border-radius: 5px; */
+    border-left: 4px solid red;
+        border-right: 4px solid red;
+}
+
+.jsitem {
+    text-align: left;
+    border-top:4px solid red;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.iconPlus,
+.iconMinus {
+    font-size: 30px;
+    color: white;
+}
+
+.addButton,
+.deleteBtn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+.addButton {
+    background-color: green;
+}
+
+.deleteBtn {
+    background-color: red;
+}
+
+.clearAll {
+    padding: 20px;
+    /* margin: 30px; */
+    border-radius: 25%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(212, 129, 145);
+    border: none;
+    cursor: pointer;
+   padding: 10px;
+}
+.minus_container{
+    /* background-color: blue; */
+    display:flex;
+    justify-content: center;
+    border-bottom:4px solid red;
+    border-left: 4px solid red;
+    border-right: 4px solid red;
+    margin-bottom:20px;
+    border-radius:0 0 10px 10px;
+    /* background: #f0f0f0; */
+}
+.plusClearAll{
+    display:flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .todoInput {
+        grid-template-columns: 1fr;
+    }
+
+    #inputBox,
+    #dateInputBox {
+        font-size: 18px;
+    }
+
+    .addButton {
+        width: 70px;
+        height: 70px;
+        font-size: 24px;
+    }
+
+    .clearAll {
+        width: 70px;
+        height: 70px;
+    }
+
+    .jsitem,
+    .jsdate {
+        font-size: 18px;
+    }
+    .plusClearAll{
+        margin-bottom: 40px;
+    }
+}
